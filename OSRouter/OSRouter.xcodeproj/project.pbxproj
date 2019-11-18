@@ -7,86 +7,88 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		544602F923828961004E676B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544602F823828961004E676B /* AppDelegate.swift */; };
-		544602FB23828961004E676B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544602FA23828961004E676B /* SceneDelegate.swift */; };
-		544602FD23828961004E676B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544602FC23828961004E676B /* ViewController.swift */; };
-		5446030023828961004E676B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544602FE23828961004E676B /* Main.storyboard */; };
-		5446030223828965004E676B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5446030123828965004E676B /* Assets.xcassets */; };
-		5446030523828965004E676B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5446030323828965004E676B /* LaunchScreen.storyboard */; };
-		5446031023828965004E676B /* OSRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446030F23828965004E676B /* OSRouterTests.swift */; };
-		5446031B23828965004E676B /* OSRouterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446031A23828965004E676B /* OSRouterUITests.swift */; };
-		5446033323828983004E676B /* OSRouterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446032923828983004E676B /* OSRouterAction.swift */; };
-		5446033423828983004E676B /* OSRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446032A23828983004E676B /* OSRouterProtocol.swift */; };
-		5446033523828983004E676B /* OSRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446032B23828983004E676B /* OSRouter.swift */; };
-		5446033623828983004E676B /* OSRouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446032C23828983004E676B /* OSRouterType.swift */; };
-		5446033723828983004E676B /* OSRouterParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446032D23828983004E676B /* OSRouterParams.swift */; };
-		5446033823828983004E676B /* NSInvocation+OSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5446033123828983004E676B /* NSInvocation+OSInvocation.m */; };
-		5446033923828983004E676B /* OSMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5446033223828983004E676B /* OSMediator.m */; };
-		5446033D23828D8D004E676B /* Url_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446033C23828D8D004E676B /* Url_Extension.swift */; };
+		5446034D2382AB94004E676B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446034C2382AB94004E676B /* AppDelegate.swift */; };
+		5446034F2382AB94004E676B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446034E2382AB94004E676B /* SceneDelegate.swift */; };
+		544603522382AB94004E676B /* OSRouter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 544603502382AB94004E676B /* OSRouter.xcdatamodeld */; };
+		544603542382AB94004E676B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544603532382AB94004E676B /* ContentView.swift */; };
+		544603562382AB98004E676B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544603552382AB98004E676B /* Assets.xcassets */; };
+		544603592382AB98004E676B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544603582382AB98004E676B /* Preview Assets.xcassets */; };
+		5446035C2382AB98004E676B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5446035A2382AB98004E676B /* LaunchScreen.storyboard */; };
+		544603672382AB99004E676B /* OSRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544603662382AB99004E676B /* OSRouterTests.swift */; };
+		544603722382AB99004E676B /* OSRouterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544603712382AB99004E676B /* OSRouterUITests.swift */; };
+		544603842382ABC8004E676B /* OSMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 544603822382ABC8004E676B /* OSMediator.m */; };
+		544603852382ABC8004E676B /* NSInvocation+OSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 544603832382ABC8004E676B /* NSInvocation+OSInvocation.m */; };
+		5446038D2382C110004E676B /* Url_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544603872382C10F004E676B /* Url_Extension.swift */; };
+		5446038E2382C110004E676B /* OSRouterParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544603882382C110004E676B /* OSRouterParams.swift */; };
+		5446038F2382C110004E676B /* OSRouterAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544603892382C110004E676B /* OSRouterAction.swift */; };
+		544603902382C110004E676B /* OSRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446038A2382C110004E676B /* OSRouter.swift */; };
+		544603912382C110004E676B /* OSRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446038B2382C110004E676B /* OSRouterProtocol.swift */; };
+		544603922382C110004E676B /* OSRouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446038C2382C110004E676B /* OSRouterType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5446030C23828965004E676B /* PBXContainerItemProxy */ = {
+		544603632382AB98004E676B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 544602ED23828961004E676B /* Project object */;
+			containerPortal = 544603412382AB94004E676B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 544602F423828961004E676B;
+			remoteGlobalIDString = 544603482382AB94004E676B;
 			remoteInfo = OSRouter;
 		};
-		5446031723828965004E676B /* PBXContainerItemProxy */ = {
+		5446036E2382AB99004E676B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 544602ED23828961004E676B /* Project object */;
+			containerPortal = 544603412382AB94004E676B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 544602F423828961004E676B;
+			remoteGlobalIDString = 544603482382AB94004E676B;
 			remoteInfo = OSRouter;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		544602F523828961004E676B /* OSRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		544602F823828961004E676B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		544602FA23828961004E676B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		544602FC23828961004E676B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		544602FF23828961004E676B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5446030123828965004E676B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5446030423828965004E676B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5446030623828965004E676B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5446030B23828965004E676B /* OSRouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSRouterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5446030F23828965004E676B /* OSRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSRouterTests.swift; sourceTree = "<group>"; };
-		5446031123828965004E676B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5446031623828965004E676B /* OSRouterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSRouterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5446031A23828965004E676B /* OSRouterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSRouterUITests.swift; sourceTree = "<group>"; };
-		5446031C23828965004E676B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5446032923828983004E676B /* OSRouterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSRouterAction.swift; sourceTree = "<group>"; };
-		5446032A23828983004E676B /* OSRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSRouterProtocol.swift; sourceTree = "<group>"; };
-		5446032B23828983004E676B /* OSRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSRouter.swift; sourceTree = "<group>"; };
-		5446032C23828983004E676B /* OSRouterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSRouterType.swift; sourceTree = "<group>"; };
-		5446032D23828983004E676B /* OSRouterParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSRouterParams.swift; sourceTree = "<group>"; };
-		5446032F23828983004E676B /* NSInvocation+OSInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+OSInvocation.h"; sourceTree = "<group>"; };
-		5446033023828983004E676B /* OSMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMediator.h; sourceTree = "<group>"; };
-		5446033123828983004E676B /* NSInvocation+OSInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+OSInvocation.m"; sourceTree = "<group>"; };
-		5446033223828983004E676B /* OSMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMediator.m; sourceTree = "<group>"; };
-		5446033A23828AF5004E676B /* OSPublicHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSPublicHeader.h; sourceTree = "<group>"; };
-		5446033B23828B72004E676B /* OSRouter-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSRouter-Bridging-Header.h"; sourceTree = "<group>"; };
-		5446033C23828D8D004E676B /* Url_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Url_Extension.swift; sourceTree = "<group>"; };
+		544603492382AB94004E676B /* OSRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5446034C2382AB94004E676B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5446034E2382AB94004E676B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		544603512382AB94004E676B /* OSRouter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OSRouter.xcdatamodel; sourceTree = "<group>"; };
+		544603532382AB94004E676B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		544603552382AB98004E676B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		544603582382AB98004E676B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5446035B2382AB98004E676B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5446035D2382AB98004E676B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		544603622382AB98004E676B /* OSRouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSRouterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		544603662382AB99004E676B /* OSRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSRouterTests.swift; sourceTree = "<group>"; };
+		544603682382AB99004E676B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5446036D2382AB99004E676B /* OSRouterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OSRouterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		544603712382AB99004E676B /* OSRouterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OSRouterUITests.swift; sourceTree = "<group>"; };
+		544603732382AB99004E676B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5446037F2382ABC7004E676B /* OSRouter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OSRouter-Bridging-Header.h"; sourceTree = "<group>"; };
+		544603802382ABC8004E676B /* NSInvocation+OSInvocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSInvocation+OSInvocation.h"; sourceTree = "<group>"; };
+		544603812382ABC8004E676B /* OSMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMediator.h; sourceTree = "<group>"; };
+		544603822382ABC8004E676B /* OSMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMediator.m; sourceTree = "<group>"; };
+		544603832382ABC8004E676B /* NSInvocation+OSInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+OSInvocation.m"; sourceTree = "<group>"; };
+		544603872382C10F004E676B /* Url_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Url_Extension.swift; sourceTree = "<group>"; };
+		544603882382C110004E676B /* OSRouterParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSRouterParams.swift; sourceTree = "<group>"; };
+		544603892382C110004E676B /* OSRouterAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSRouterAction.swift; sourceTree = "<group>"; };
+		5446038A2382C110004E676B /* OSRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSRouter.swift; sourceTree = "<group>"; };
+		5446038B2382C110004E676B /* OSRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSRouterProtocol.swift; sourceTree = "<group>"; };
+		5446038C2382C110004E676B /* OSRouterType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSRouterType.swift; sourceTree = "<group>"; };
+		544603942382C19B004E676B /* OSRouterHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSRouterHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		544602F223828961004E676B /* Frameworks */ = {
+		544603462382AB94004E676B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5446030823828965004E676B /* Frameworks */ = {
+		5446035F2382AB98004E676B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5446031323828965004E676B /* Frameworks */ = {
+		5446036A2382AB99004E676B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -96,82 +98,91 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		544602EC23828961004E676B = {
+		544603402382AB94004E676B = {
 			isa = PBXGroup;
 			children = (
-				544602F723828961004E676B /* OSRouter */,
-				5446030E23828965004E676B /* OSRouterTests */,
-				5446031923828965004E676B /* OSRouterUITests */,
-				544602F623828961004E676B /* Products */,
+				5446034B2382AB94004E676B /* OSRouter */,
+				544603652382AB98004E676B /* OSRouterTests */,
+				544603702382AB99004E676B /* OSRouterUITests */,
+				5446034A2382AB94004E676B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		544602F623828961004E676B /* Products */ = {
+		5446034A2382AB94004E676B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				544602F523828961004E676B /* OSRouter.app */,
-				5446030B23828965004E676B /* OSRouterTests.xctest */,
-				5446031623828965004E676B /* OSRouterUITests.xctest */,
+				544603492382AB94004E676B /* OSRouter.app */,
+				544603622382AB98004E676B /* OSRouterTests.xctest */,
+				5446036D2382AB99004E676B /* OSRouterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		544602F723828961004E676B /* OSRouter */ = {
+		5446034B2382AB94004E676B /* OSRouter */ = {
 			isa = PBXGroup;
 			children = (
-				5446032823828983004E676B /* OSRouter */,
-				544602F823828961004E676B /* AppDelegate.swift */,
-				544602FA23828961004E676B /* SceneDelegate.swift */,
-				544602FC23828961004E676B /* ViewController.swift */,
-				5446033A23828AF5004E676B /* OSPublicHeader.h */,
-				5446033B23828B72004E676B /* OSRouter-Bridging-Header.h */,
-				544602FE23828961004E676B /* Main.storyboard */,
-				5446030123828965004E676B /* Assets.xcassets */,
-				5446030323828965004E676B /* LaunchScreen.storyboard */,
-				5446030623828965004E676B /* Info.plist */,
+				544603862382ABCF004E676B /* OSRouter */,
+				5446034C2382AB94004E676B /* AppDelegate.swift */,
+				5446034E2382AB94004E676B /* SceneDelegate.swift */,
+				544603532382AB94004E676B /* ContentView.swift */,
+				544603942382C19B004E676B /* OSRouterHeader.h */,
+				544603552382AB98004E676B /* Assets.xcassets */,
+				5446035A2382AB98004E676B /* LaunchScreen.storyboard */,
+				5446035D2382AB98004E676B /* Info.plist */,
+				544603502382AB94004E676B /* OSRouter.xcdatamodeld */,
+				544603572382AB98004E676B /* Preview Content */,
+				5446037F2382ABC7004E676B /* OSRouter-Bridging-Header.h */,
 			);
 			path = OSRouter;
 			sourceTree = "<group>";
 		};
-		5446030E23828965004E676B /* OSRouterTests */ = {
+		544603572382AB98004E676B /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				5446030F23828965004E676B /* OSRouterTests.swift */,
-				5446031123828965004E676B /* Info.plist */,
+				544603582382AB98004E676B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		544603652382AB98004E676B /* OSRouterTests */ = {
+			isa = PBXGroup;
+			children = (
+				544603662382AB99004E676B /* OSRouterTests.swift */,
+				544603682382AB99004E676B /* Info.plist */,
 			);
 			path = OSRouterTests;
 			sourceTree = "<group>";
 		};
-		5446031923828965004E676B /* OSRouterUITests */ = {
+		544603702382AB99004E676B /* OSRouterUITests */ = {
 			isa = PBXGroup;
 			children = (
-				5446031A23828965004E676B /* OSRouterUITests.swift */,
-				5446031C23828965004E676B /* Info.plist */,
+				544603712382AB99004E676B /* OSRouterUITests.swift */,
+				544603732382AB99004E676B /* Info.plist */,
 			);
 			path = OSRouterUITests;
 			sourceTree = "<group>";
 		};
-		5446032823828983004E676B /* OSRouter */ = {
+		544603862382ABCF004E676B /* OSRouter */ = {
 			isa = PBXGroup;
 			children = (
-				5446032B23828983004E676B /* OSRouter.swift */,
-				5446032923828983004E676B /* OSRouterAction.swift */,
-				5446032A23828983004E676B /* OSRouterProtocol.swift */,
-				5446032C23828983004E676B /* OSRouterType.swift */,
-				5446032D23828983004E676B /* OSRouterParams.swift */,
-				5446033C23828D8D004E676B /* Url_Extension.swift */,
-				5446032E23828983004E676B /* OSMediator */,
+				5446038A2382C110004E676B /* OSRouter.swift */,
+				544603892382C110004E676B /* OSRouterAction.swift */,
+				544603882382C110004E676B /* OSRouterParams.swift */,
+				5446038B2382C110004E676B /* OSRouterProtocol.swift */,
+				5446038C2382C110004E676B /* OSRouterType.swift */,
+				544603872382C10F004E676B /* Url_Extension.swift */,
+				544603932382C118004E676B /* OSMediator */,
 			);
 			path = OSRouter;
 			sourceTree = "<group>";
 		};
-		5446032E23828983004E676B /* OSMediator */ = {
+		544603932382C118004E676B /* OSMediator */ = {
 			isa = PBXGroup;
 			children = (
-				5446033023828983004E676B /* OSMediator.h */,
-				5446033223828983004E676B /* OSMediator.m */,
-				5446033123828983004E676B /* NSInvocation+OSInvocation.m */,
-				5446032F23828983004E676B /* NSInvocation+OSInvocation.h */,
+				544603802382ABC8004E676B /* NSInvocation+OSInvocation.h */,
+				544603832382ABC8004E676B /* NSInvocation+OSInvocation.m */,
+				544603812382ABC8004E676B /* OSMediator.h */,
+				544603822382ABC8004E676B /* OSMediator.m */,
 			);
 			path = OSMediator;
 			sourceTree = "<group>";
@@ -179,13 +190,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		544602F423828961004E676B /* OSRouter */ = {
+		544603482382AB94004E676B /* OSRouter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5446031F23828965004E676B /* Build configuration list for PBXNativeTarget "OSRouter" */;
+			buildConfigurationList = 544603762382AB99004E676B /* Build configuration list for PBXNativeTarget "OSRouter" */;
 			buildPhases = (
-				544602F123828961004E676B /* Sources */,
-				544602F223828961004E676B /* Frameworks */,
-				544602F323828961004E676B /* Resources */,
+				544603452382AB94004E676B /* Sources */,
+				544603462382AB94004E676B /* Frameworks */,
+				544603472382AB94004E676B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -193,69 +204,70 @@
 			);
 			name = OSRouter;
 			productName = OSRouter;
-			productReference = 544602F523828961004E676B /* OSRouter.app */;
+			productReference = 544603492382AB94004E676B /* OSRouter.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5446030A23828965004E676B /* OSRouterTests */ = {
+		544603612382AB98004E676B /* OSRouterTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5446032223828965004E676B /* Build configuration list for PBXNativeTarget "OSRouterTests" */;
+			buildConfigurationList = 544603792382AB99004E676B /* Build configuration list for PBXNativeTarget "OSRouterTests" */;
 			buildPhases = (
-				5446030723828965004E676B /* Sources */,
-				5446030823828965004E676B /* Frameworks */,
-				5446030923828965004E676B /* Resources */,
+				5446035E2382AB98004E676B /* Sources */,
+				5446035F2382AB98004E676B /* Frameworks */,
+				544603602382AB98004E676B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5446030D23828965004E676B /* PBXTargetDependency */,
+				544603642382AB98004E676B /* PBXTargetDependency */,
 			);
 			name = OSRouterTests;
 			productName = OSRouterTests;
-			productReference = 5446030B23828965004E676B /* OSRouterTests.xctest */;
+			productReference = 544603622382AB98004E676B /* OSRouterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5446031523828965004E676B /* OSRouterUITests */ = {
+		5446036C2382AB99004E676B /* OSRouterUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5446032523828965004E676B /* Build configuration list for PBXNativeTarget "OSRouterUITests" */;
+			buildConfigurationList = 5446037C2382AB99004E676B /* Build configuration list for PBXNativeTarget "OSRouterUITests" */;
 			buildPhases = (
-				5446031223828965004E676B /* Sources */,
-				5446031323828965004E676B /* Frameworks */,
-				5446031423828965004E676B /* Resources */,
+				544603692382AB99004E676B /* Sources */,
+				5446036A2382AB99004E676B /* Frameworks */,
+				5446036B2382AB99004E676B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5446031823828965004E676B /* PBXTargetDependency */,
+				5446036F2382AB99004E676B /* PBXTargetDependency */,
 			);
 			name = OSRouterUITests;
 			productName = OSRouterUITests;
-			productReference = 5446031623828965004E676B /* OSRouterUITests.xctest */;
+			productReference = 5446036D2382AB99004E676B /* OSRouterUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		544602ED23828961004E676B /* Project object */ = {
+		544603412382AB94004E676B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "张飞";
 				TargetAttributes = {
-					544602F423828961004E676B = {
+					544603482382AB94004E676B = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
-					5446030A23828965004E676B = {
+					544603612382AB98004E676B = {
 						CreatedOnToolsVersion = 11.0;
-						TestTargetID = 544602F423828961004E676B;
+						TestTargetID = 544603482382AB94004E676B;
 					};
-					5446031523828965004E676B = {
+					5446036C2382AB99004E676B = {
 						CreatedOnToolsVersion = 11.0;
-						TestTargetID = 544602F423828961004E676B;
+						TestTargetID = 544603482382AB94004E676B;
 					};
 				};
 			};
-			buildConfigurationList = 544602F023828961004E676B /* Build configuration list for PBXProject "OSRouter" */;
+			buildConfigurationList = 544603442382AB94004E676B /* Build configuration list for PBXProject "OSRouter" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -263,37 +275,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 544602EC23828961004E676B;
-			productRefGroup = 544602F623828961004E676B /* Products */;
+			mainGroup = 544603402382AB94004E676B;
+			productRefGroup = 5446034A2382AB94004E676B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				544602F423828961004E676B /* OSRouter */,
-				5446030A23828965004E676B /* OSRouterTests */,
-				5446031523828965004E676B /* OSRouterUITests */,
+				544603482382AB94004E676B /* OSRouter */,
+				544603612382AB98004E676B /* OSRouterTests */,
+				5446036C2382AB99004E676B /* OSRouterUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		544602F323828961004E676B /* Resources */ = {
+		544603472382AB94004E676B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5446030523828965004E676B /* LaunchScreen.storyboard in Resources */,
-				5446030223828965004E676B /* Assets.xcassets in Resources */,
-				5446030023828961004E676B /* Main.storyboard in Resources */,
+				5446035C2382AB98004E676B /* LaunchScreen.storyboard in Resources */,
+				544603592382AB98004E676B /* Preview Assets.xcassets in Resources */,
+				544603562382AB98004E676B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5446030923828965004E676B /* Resources */ = {
+		544603602382AB98004E676B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5446031423828965004E676B /* Resources */ = {
+		5446036B2382AB99004E676B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -303,68 +315,61 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		544602F123828961004E676B /* Sources */ = {
+		544603452382AB94004E676B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5446033D23828D8D004E676B /* Url_Extension.swift in Sources */,
-				5446033523828983004E676B /* OSRouter.swift in Sources */,
-				5446033623828983004E676B /* OSRouterType.swift in Sources */,
-				5446033423828983004E676B /* OSRouterProtocol.swift in Sources */,
-				5446033323828983004E676B /* OSRouterAction.swift in Sources */,
-				544602FD23828961004E676B /* ViewController.swift in Sources */,
-				544602F923828961004E676B /* AppDelegate.swift in Sources */,
-				5446033723828983004E676B /* OSRouterParams.swift in Sources */,
-				5446033823828983004E676B /* NSInvocation+OSInvocation.m in Sources */,
-				5446033923828983004E676B /* OSMediator.m in Sources */,
-				544602FB23828961004E676B /* SceneDelegate.swift in Sources */,
+				544603902382C110004E676B /* OSRouter.swift in Sources */,
+				544603522382AB94004E676B /* OSRouter.xcdatamodeld in Sources */,
+				5446038D2382C110004E676B /* Url_Extension.swift in Sources */,
+				5446038F2382C110004E676B /* OSRouterAction.swift in Sources */,
+				5446034D2382AB94004E676B /* AppDelegate.swift in Sources */,
+				544603542382AB94004E676B /* ContentView.swift in Sources */,
+				544603922382C110004E676B /* OSRouterType.swift in Sources */,
+				544603912382C110004E676B /* OSRouterProtocol.swift in Sources */,
+				544603842382ABC8004E676B /* OSMediator.m in Sources */,
+				544603852382ABC8004E676B /* NSInvocation+OSInvocation.m in Sources */,
+				5446038E2382C110004E676B /* OSRouterParams.swift in Sources */,
+				5446034F2382AB94004E676B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5446030723828965004E676B /* Sources */ = {
+		5446035E2382AB98004E676B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5446031023828965004E676B /* OSRouterTests.swift in Sources */,
+				544603672382AB99004E676B /* OSRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5446031223828965004E676B /* Sources */ = {
+		544603692382AB99004E676B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5446031B23828965004E676B /* OSRouterUITests.swift in Sources */,
+				544603722382AB99004E676B /* OSRouterUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5446030D23828965004E676B /* PBXTargetDependency */ = {
+		544603642382AB98004E676B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 544602F423828961004E676B /* OSRouter */;
-			targetProxy = 5446030C23828965004E676B /* PBXContainerItemProxy */;
+			target = 544603482382AB94004E676B /* OSRouter */;
+			targetProxy = 544603632382AB98004E676B /* PBXContainerItemProxy */;
 		};
-		5446031823828965004E676B /* PBXTargetDependency */ = {
+		5446036F2382AB99004E676B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 544602F423828961004E676B /* OSRouter */;
-			targetProxy = 5446031723828965004E676B /* PBXContainerItemProxy */;
+			target = 544603482382AB94004E676B /* OSRouter */;
+			targetProxy = 5446036E2382AB99004E676B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		544602FE23828961004E676B /* Main.storyboard */ = {
+		5446035A2382AB98004E676B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				544602FF23828961004E676B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		5446030323828965004E676B /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5446030423828965004E676B /* Base */,
+				5446035B2382AB98004E676B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -372,7 +377,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5446031D23828965004E676B /* Debug */ = {
+		544603742382AB99004E676B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -432,7 +437,7 @@
 			};
 			name = Debug;
 		};
-		5446031E23828965004E676B /* Release */ = {
+		544603752382AB99004E676B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -486,13 +491,16 @@
 			};
 			name = Release;
 		};
-		5446032023828965004E676B /* Debug */ = {
+		544603772382AB99004E676B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"OSRouter/Preview Content\"";
 				DEVELOPMENT_TEAM = 49QL38VYXX;
+				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OSRouter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -501,18 +509,22 @@
 				PRODUCT_BUNDLE_IDENTIFIER = bcc.OSRouter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "OSRouter/OSRouter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		5446032123828965004E676B /* Release */ = {
+		544603782382AB99004E676B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"OSRouter/Preview Content\"";
 				DEVELOPMENT_TEAM = 49QL38VYXX;
+				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OSRouter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -526,7 +538,7 @@
 			};
 			name = Release;
 		};
-		5446032323828965004E676B /* Debug */ = {
+		5446037A2382AB99004E676B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -548,7 +560,7 @@
 			};
 			name = Debug;
 		};
-		5446032423828965004E676B /* Release */ = {
+		5446037B2382AB99004E676B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -570,7 +582,7 @@
 			};
 			name = Release;
 		};
-		5446032623828965004E676B /* Debug */ = {
+		5446037D2382AB99004E676B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -590,7 +602,7 @@
 			};
 			name = Debug;
 		};
-		5446032723828965004E676B /* Release */ = {
+		5446037E2382AB99004E676B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -613,43 +625,56 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		544602F023828961004E676B /* Build configuration list for PBXProject "OSRouter" */ = {
+		544603442382AB94004E676B /* Build configuration list for PBXProject "OSRouter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5446031D23828965004E676B /* Debug */,
-				5446031E23828965004E676B /* Release */,
+				544603742382AB99004E676B /* Debug */,
+				544603752382AB99004E676B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5446031F23828965004E676B /* Build configuration list for PBXNativeTarget "OSRouter" */ = {
+		544603762382AB99004E676B /* Build configuration list for PBXNativeTarget "OSRouter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5446032023828965004E676B /* Debug */,
-				5446032123828965004E676B /* Release */,
+				544603772382AB99004E676B /* Debug */,
+				544603782382AB99004E676B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5446032223828965004E676B /* Build configuration list for PBXNativeTarget "OSRouterTests" */ = {
+		544603792382AB99004E676B /* Build configuration list for PBXNativeTarget "OSRouterTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5446032323828965004E676B /* Debug */,
-				5446032423828965004E676B /* Release */,
+				5446037A2382AB99004E676B /* Debug */,
+				5446037B2382AB99004E676B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5446032523828965004E676B /* Build configuration list for PBXNativeTarget "OSRouterUITests" */ = {
+		5446037C2382AB99004E676B /* Build configuration list for PBXNativeTarget "OSRouterUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5446032623828965004E676B /* Debug */,
-				5446032723828965004E676B /* Release */,
+				5446037D2382AB99004E676B /* Debug */,
+				5446037E2382AB99004E676B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		544603502382AB94004E676B /* OSRouter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				544603512382AB94004E676B /* OSRouter.xcdatamodel */,
+			);
+			currentVersion = 544603512382AB94004E676B /* OSRouter.xcdatamodel */;
+			path = OSRouter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 544602ED23828961004E676B /* Project object */;
+	rootObject = 544603412382AB94004E676B /* Project object */;
 }

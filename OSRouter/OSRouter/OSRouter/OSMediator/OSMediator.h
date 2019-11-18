@@ -6,15 +6,14 @@
 //  Copyright © 2019 张飞. All rights reserved.
 //
 
-#import "OSPublicHeader.h"
-
-extern NSString * const kOSSwiftTargetModuleName;
+#import "OSRouter-Swift.h"
+#import "OSRouterHeader.h"
 
 @interface OSMediator : NSObject
 
 + (instancetype)sharedInstance;
 
-- (id)performTarget:(NSString *)targetName action:(NSString *)actionName params:(NSDictionary *)params shouldCacheTarget:(BOOL)shouldCacheTarget;
+- (id)performTarget:(OSRouterParams *)params shouldCacheTarget:(BOOL)shouldCacheTarget;
 - (void)removeTargetWithTargetName:(NSString *)targetName;
 
 

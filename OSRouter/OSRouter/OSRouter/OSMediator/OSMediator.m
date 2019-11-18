@@ -9,10 +9,6 @@
 
 #import "OSMediator.h"
 #import <objc/runtime.h>
-#import "NSInvocation+OSInvocation.h"
-
-NSString * const kOSSwiftTargetModuleName = @"kOSSwiftTargetModuleName";
-
 
 @interface OSMediator ()
 
@@ -35,10 +31,12 @@ NSString * const kOSSwiftTargetModuleName = @"kOSSwiftTargetModuleName";
 }
 
 
-- (id)performTarget:(NSString *)targetName action:(NSString *)actionName params:(NSDictionary *)params shouldCacheTarget:(BOOL)shouldCacheTarget
+- (id)performTarget:(OSRouterParams *)params shouldCacheTarget:(BOOL)shouldCacheTarget
 {
-    NSString *swiftModuleName = params[kOSSwiftTargetModuleName];
-    
+    NSString *swiftModuleName = params.osModuleSwiftModuleName;
+    NSString *targetName = params.osModuleTarget;
+    NSString *actionName = params.osModuleAction;
+ 
     // generate target
     NSString *targetClassString = nil;
     if (swiftModuleName.length > 0) {
@@ -58,7 +56,7 @@ NSString * const kOSSwiftTargetModuleName = @"kOSSwiftTargetModuleName";
     
     if (target == nil) {
         
-        [self NoTargetActionResponseWithTargetString:targetClassString selectorString:actionString originParams:params];
+        [self NoTargetActionResponseWithTargetString:targetClassString selectorString:actionString originParams:params.OSRouterParams];
         return nil;
     }
     
@@ -67,15 +65,15 @@ NSString * const kOSSwiftTargetModuleName = @"kOSSwiftTargetModuleName";
     }
 
     if ([target respondsToSelector:action]) {
-        return [self safePerformAction:action target:target params:params];
+        return [self safePerformAction:action target:target params:params.OSRouterParams];
     } else {
         
         SEL action = NSSelectorFromString(@"NoFound:");
         if ([target respondsToSelector:action]) {
-            return [self safePerformAction:action target:target params:params];
+            return [self safePerformAction:action target:target params:params.OSRouterParams];
         } else {
            
-            [self NoTargetActionResponseWithTargetString:targetClassString selectorString:actionString originParams:params];
+            [self NoTargetActionResponseWithTargetString:targetClassString selectorString:actionString originParams:params.OSRouterParams];
             [self.cachedTarget removeObjectForKey:targetClassString];
             return nil;
         }

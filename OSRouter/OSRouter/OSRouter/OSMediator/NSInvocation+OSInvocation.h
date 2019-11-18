@@ -7,7 +7,8 @@
 //
 
 
-#import "OSPublicHeader.h"
+#import "OSRouterHeader.h"
+
 @interface NSInvocation (OSInvocation)
 
 +(id)dispatchInvocationWithRetType:(const char*)retType

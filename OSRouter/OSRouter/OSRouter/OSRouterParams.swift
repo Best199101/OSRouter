@@ -8,14 +8,16 @@
 
 import Foundation
 
-class OSRouterParams:NSObject{
+@objcMembers class OSRouterParams:NSObject{
     
     public var osModuleTarget:OSString?
+    public var osModuleSwiftModuleName:OSString?
     public var osModuleAction:OSString?
     public var osModuleScheme:OSString?
     public var osModuleAuthor:OSString?
     public var osModulePassword:OSString?
     public var osModuleParams:OSAnyHashbleDic?
+    
     
 
 }
@@ -27,6 +29,14 @@ extension OSRouterParams{
     public func osModuleTarget(_ value:OSString?)->OSRouterParams{
         
         self.osModuleTarget = value
+        return self
+        
+    }
+    
+    @discardableResult
+    public func osModuleSwiftModuleName(_ value:OSString?)->OSRouterParams{
+        
+        self.osModuleSwiftModuleName = value
         return self
         
     }
