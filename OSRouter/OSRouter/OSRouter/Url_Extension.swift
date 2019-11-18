@@ -22,7 +22,7 @@ extension URL{
         routerParams.osModuleAuthor(url.user)
         routerParams.osModulePassword(url.password)
 
-        var params:OSDic = [:]
+        var params:OSAnyHashbleDic = [:]
         
         if let query = url.query{
             

@@ -11,7 +11,7 @@ import UIKit
 class OSRouterAction: NSObject {
     
     public var  actionValue:String?
-    public var  actionParams:OSDic?
+    public var  actionParams:OSAnyHashbleDic?
 
 }
 
@@ -23,7 +23,7 @@ extension OSRouterAction{
         
     }
     
-    static public func classMethodParams(_ actionName:OSString,actionParams:OSDic = [:])->OSRouterAction{
+    static public func classMethodParams(_ actionName:OSString,actionParams:OSAnyHashbleDic = [:])->OSRouterAction{
         let action = OSRouterAction()
         action.actionValue = actionName
         action.actionParams = actionParams
@@ -42,7 +42,7 @@ extension OSRouterAction{
         
     }
     
-    public func osActionParams(_ params:OSDic)->OSRouterAction{
+    public func osActionParams(_ params:OSAnyHashbleDic)->OSRouterAction{
         
         self.actionParams = params
         return self

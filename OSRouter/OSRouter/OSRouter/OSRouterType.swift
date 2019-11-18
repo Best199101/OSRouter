@@ -11,7 +11,7 @@ import Foundation
 typealias OSObjc = AnyObject
 typealias OSAnyHashble = AnyHashable
 typealias OSString = String
-typealias OSDic = [OSString:OSAnyHashble]
+typealias OSAnyHashbleDic = [OSString:OSAnyHashble]
 
 let kOSSwiftTargetModuleName = "kOSSwiftTargetModuleName"
 

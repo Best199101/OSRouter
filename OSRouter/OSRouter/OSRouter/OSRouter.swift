@@ -13,7 +13,7 @@ class OSRouter: NSObject,OSRouterProtocol {}
 extension OSRouter{
     
     // Module统一调用
-    static public func performeCurrentModule(moduleUrl:URL?,params:OSDic?){
+    static public func performeCurrentModule(moduleUrl:URL?,params:OSAnyHashbleDic?){
         
         guard let moduleUrl = moduleUrl else { return  }
         

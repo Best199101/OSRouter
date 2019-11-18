@@ -15,7 +15,7 @@ class OSRouterParams:NSObject{
     public var osModuleScheme:OSString?
     public var osModuleAuthor:OSString?
     public var osModulePassword:OSString?
-    public var osModuleParams:OSDic?
+    public var osModuleParams:OSAnyHashbleDic?
     
 
 }
@@ -64,7 +64,7 @@ extension OSRouterParams{
     }
 
     @discardableResult
-    public func osModuleParams(_ value:OSDic?)->OSRouterParams{
+    public func osModuleParams(_ value:OSAnyHashbleDic?)->OSRouterParams{
         
         self.osModuleParams = value
         return self
