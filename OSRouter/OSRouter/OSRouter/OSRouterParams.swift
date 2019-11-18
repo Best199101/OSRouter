@@ -13,9 +13,11 @@ class OSRouterParams:NSObject{
     public var osModuleTarget:OSString?
     public var osModuleAction:OSString?
     public var osModuleScheme:OSString?
+    public var osModuleAuthor:OSString?
+    public var osModulePassword:OSString?
     public var osModuleParams:OSDic?
     
- 
+
 }
 
 
@@ -45,6 +47,22 @@ extension OSRouterParams{
         
     }
     
+    @discardableResult
+    public func osModuleAuthor(_ value:OSString?)->OSRouterParams{
+        
+        self.osModuleAuthor = value
+        return self
+        
+    }
+    
+    @discardableResult
+    public func osModulePassword(_ value:OSString?)->OSRouterParams{
+        
+        self.osModulePassword = value
+        return self
+        
+    }
+
     @discardableResult
     public func osModuleParams(_ value:OSDic?)->OSRouterParams{
         

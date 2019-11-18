@@ -19,6 +19,8 @@ extension URL{
         routerParams.osModuleTarget(url.host)
         routerParams.osModuleAction(url.path)
         routerParams.osModuleScheme(url.scheme)
+        routerParams.osModuleAuthor(url.user)
+        routerParams.osModulePassword(url.password)
 
         var params:OSDic = [:]
         
