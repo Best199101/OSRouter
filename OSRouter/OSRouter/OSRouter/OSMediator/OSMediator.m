@@ -42,9 +42,9 @@ NSString * const kOSSwiftTargetModuleName = @"kOSSwiftTargetModuleName";
     // generate target
     NSString *targetClassString = nil;
     if (swiftModuleName.length > 0) {
-        targetClassString = [NSString stringWithFormat:@"%@.Target_%@", swiftModuleName, targetName];
+        targetClassString = [NSString stringWithFormat:@"%@.%@", swiftModuleName, targetName];
     } else {
-        targetClassString = [NSString stringWithFormat:@"Target_%@", targetName];
+        targetClassString = [NSString stringWithFormat:@"%@", targetName];
     }
     NSObject *target = self.cachedTarget[targetClassString];
     if (target == nil) {
@@ -53,7 +53,7 @@ NSString * const kOSSwiftTargetModuleName = @"kOSSwiftTargetModuleName";
     }
 
     // generate action
-    NSString *actionString = [NSString stringWithFormat:@"Action_%@:", actionName];
+    NSString *actionString = [NSString stringWithFormat:@"%@:", actionName];
     SEL action = NSSelectorFromString(actionString);
     
     if (target == nil) {
@@ -70,7 +70,7 @@ NSString * const kOSSwiftTargetModuleName = @"kOSSwiftTargetModuleName";
         return [self safePerformAction:action target:target params:params];
     } else {
         
-        SEL action = NSSelectorFromString(@"notFound:");
+        SEL action = NSSelectorFromString(@"NoFound:");
         if ([target respondsToSelector:action]) {
             return [self safePerformAction:action target:target params:params];
         } else {
@@ -84,15 +84,15 @@ NSString * const kOSSwiftTargetModuleName = @"kOSSwiftTargetModuleName";
 
 - (void)removeTargetWithTargetName:(NSString *)targetName
 {
-    NSString *targetClassString = [NSString stringWithFormat:@"Target_%@", targetName];
+    NSString *targetClassString = [NSString stringWithFormat:@"%@", targetName];
     [self.cachedTarget removeObjectForKey:targetClassString];
 }
 
 #pragma mark - private methods
 - (void)NoTargetActionResponseWithTargetString:(NSString *)targetString selectorString:(NSString *)selectorString originParams:(NSDictionary *)originParams
 {
-    SEL action = NSSelectorFromString(@"Action_response:");
-    NSObject *target = [[NSClassFromString(@"Target_NoTargetAction") alloc] init];
+    SEL action = NSSelectorFromString(@"NoResponse:");
+    NSObject *target = [[NSClassFromString(@"NoTargetAction") alloc] init];
     
     NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
     params[@"originParams"] = originParams;
