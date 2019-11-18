@@ -65,6 +65,8 @@
 		5446033023828983004E676B /* OSMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSMediator.h; sourceTree = "<group>"; };
 		5446033123828983004E676B /* NSInvocation+OSInvocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSInvocation+OSInvocation.m"; sourceTree = "<group>"; };
 		5446033223828983004E676B /* OSMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMediator.m; sourceTree = "<group>"; };
+		5446033A23828AF5004E676B /* OSPublicHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSPublicHeader.h; sourceTree = "<group>"; };
+		5446033B23828B72004E676B /* OSRouter-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSRouter-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,8 @@
 				544602F823828961004E676B /* AppDelegate.swift */,
 				544602FA23828961004E676B /* SceneDelegate.swift */,
 				544602FC23828961004E676B /* ViewController.swift */,
+				5446033A23828AF5004E676B /* OSPublicHeader.h */,
+				5446033B23828B72004E676B /* OSRouter-Bridging-Header.h */,
 				544602FE23828961004E676B /* Main.storyboard */,
 				5446030123828965004E676B /* Assets.xcassets */,
 				5446030323828965004E676B /* LaunchScreen.storyboard */,
@@ -161,10 +165,10 @@
 		5446032E23828983004E676B /* OSMediator */ = {
 			isa = PBXGroup;
 			children = (
-				5446032F23828983004E676B /* NSInvocation+OSInvocation.h */,
 				5446033023828983004E676B /* OSMediator.h */,
-				5446033123828983004E676B /* NSInvocation+OSInvocation.m */,
 				5446033223828983004E676B /* OSMediator.m */,
+				5446033123828983004E676B /* NSInvocation+OSInvocation.m */,
+				5446032F23828983004E676B /* NSInvocation+OSInvocation.h */,
 			);
 			path = OSMediator;
 			sourceTree = "<group>";
@@ -483,6 +487,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 49QL38VYXX;
 				INFOPLIST_FILE = OSRouter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -491,6 +496,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = bcc.OSRouter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OSRouter/OSRouter-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -501,6 +507,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 49QL38VYXX;
 				INFOPLIST_FILE = OSRouter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -509,6 +516,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = bcc.OSRouter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "OSRouter/OSRouter-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
