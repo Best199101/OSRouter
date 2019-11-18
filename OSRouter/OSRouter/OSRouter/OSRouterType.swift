@@ -13,7 +13,6 @@ typealias OSAnyHashble = AnyHashable
 typealias OSString = String
 typealias OSDic = [OSString:OSAnyHashble]
 
-
 let kOSSwiftTargetModuleName = "kOSSwiftTargetModuleName"
 
 enum OSModuleType:String{

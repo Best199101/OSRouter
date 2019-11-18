@@ -10,28 +10,45 @@ import Foundation
 
 class OSRouterParams:NSObject{
     
-    public lazy var osModuleValue:OSDic = {
-        return [:]
-    }()
-    public var osModuleKey:OSString?
-
+    public var osModuleTarget:OSString?
+    public var osModuleAction:OSString?
+    public var osModuleScheme:OSString?
+    public var osModuleParams:OSDic?
+    
+ 
 }
 
 
 extension OSRouterParams{
     
-    public func OSKey(_ key:OSString)->OSRouterParams{
+    @discardableResult
+    public func osModuleTarget(_ value:OSString?)->OSRouterParams{
         
-        self.osModuleKey = key
+        self.osModuleTarget = value
         return self
         
     }
     
-    public func OSValue(_ value:OSDic)->OSRouterParams{
+    @discardableResult
+    public func osModuleAction(_ value:OSString?)->OSRouterParams{
         
-        if let OSKey = self.osModuleKey {
-            self.osModuleValue[OSKey] = value
-        }
+        self.osModuleAction = value
+        return self
+        
+    }
+    
+    @discardableResult
+    public func osModuleScheme(_ value:OSString?)->OSRouterParams{
+        
+        self.osModuleScheme = value
+        return self
+        
+    }
+    
+    @discardableResult
+    public func osModuleParams(_ value:OSDic?)->OSRouterParams{
+        
+        self.osModuleParams = value
         return self
         
     }

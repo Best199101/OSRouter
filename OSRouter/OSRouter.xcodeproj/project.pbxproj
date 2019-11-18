@@ -22,6 +22,7 @@
 		5446033723828983004E676B /* OSRouterParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446032D23828983004E676B /* OSRouterParams.swift */; };
 		5446033823828983004E676B /* NSInvocation+OSInvocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5446033123828983004E676B /* NSInvocation+OSInvocation.m */; };
 		5446033923828983004E676B /* OSMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5446033223828983004E676B /* OSMediator.m */; };
+		5446033D23828D8D004E676B /* Url_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5446033C23828D8D004E676B /* Url_Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		5446033223828983004E676B /* OSMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSMediator.m; sourceTree = "<group>"; };
 		5446033A23828AF5004E676B /* OSPublicHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OSPublicHeader.h; sourceTree = "<group>"; };
 		5446033B23828B72004E676B /* OSRouter-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OSRouter-Bridging-Header.h"; sourceTree = "<group>"; };
+		5446033C23828D8D004E676B /* Url_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Url_Extension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,11 +154,12 @@
 		5446032823828983004E676B /* OSRouter */ = {
 			isa = PBXGroup;
 			children = (
+				5446032B23828983004E676B /* OSRouter.swift */,
 				5446032923828983004E676B /* OSRouterAction.swift */,
 				5446032A23828983004E676B /* OSRouterProtocol.swift */,
-				5446032B23828983004E676B /* OSRouter.swift */,
 				5446032C23828983004E676B /* OSRouterType.swift */,
 				5446032D23828983004E676B /* OSRouterParams.swift */,
+				5446033C23828D8D004E676B /* Url_Extension.swift */,
 				5446032E23828983004E676B /* OSMediator */,
 			);
 			path = OSRouter;
@@ -304,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5446033D23828D8D004E676B /* Url_Extension.swift in Sources */,
 				5446033523828983004E676B /* OSRouter.swift in Sources */,
 				5446033623828983004E676B /* OSRouterType.swift in Sources */,
 				5446033423828983004E676B /* OSRouterProtocol.swift in Sources */,

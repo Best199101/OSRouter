@@ -11,38 +11,40 @@ import UIKit
 class OSRouter: NSObject,OSRouterProtocol {}
 
 extension OSRouter{
-  
+    
     // Module统一调用
-    static public func performeCurrentModule(moduleUrl:URL?){
+    static public func performeCurrentModule(moduleUrl:URL?,params:OSDic?){
         
-        guard let moduleUrl = moduleUrl, let moduleScheme = moduleUrl.scheme else { return  }
+        guard let moduleUrl = moduleUrl else { return  }
         
         let result = true
         
+        let routerParams = moduleUrl.parseOSRouterUrl(url: moduleUrl)
+        
         switch result {
-        case moduleScheme.hasPrefix(OSModuleType.Native.rawValue):
+        case routerParams.osModuleScheme?.hasPrefix(OSModuleType.Native.rawValue) == result:
             
-            performeNativeModule(nativeUrl: moduleUrl)
+            performeNativeModule(params: routerParams)
             
-      case moduleScheme.hasPrefix(OSModuleType.Serve.rawValue):
+        case routerParams.osModuleScheme?.hasPrefix(OSModuleType.Serve.rawValue) == result:
             
-            performServeModule(serveUrl: moduleUrl)
+            performServeModule(params: routerParams)
             
-        case moduleScheme.hasPrefix(OSModuleType.Web.rawValue):
+        case routerParams.osModuleScheme?.hasPrefix(OSModuleType.Web.rawValue) == result:
             
-            performWebModule(webUrl: moduleUrl)
+            performWebModule(params: routerParams)
             
-        case moduleScheme.hasPrefix(OSModuleType.Mini.rawValue):
+        case routerParams.osModuleScheme?.hasPrefix(OSModuleType.Mini.rawValue) == result:
             
-            performMiniModule(miniUrl: moduleUrl)
+            performMiniModule(params: routerParams)
             
-        case moduleScheme.hasPrefix(OSModuleType.Push.rawValue):
+        case routerParams.osModuleScheme?.hasPrefix(OSModuleType.Push.rawValue) == result:
             
-            performPushModule(pushUrl: moduleUrl)
+            performPushModule(params: routerParams)
             
         default:
             
-            performOtherModule(otherUrl: moduleUrl)
+            performOtherModule(params: routerParams)
         }
         
     }
