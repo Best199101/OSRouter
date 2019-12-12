@@ -16,7 +16,6 @@ typealias OSAnyHashbleDic = [OSString:OSAnyHashble]
 enum OSModuleType:String{
   
     case Native = "Native"
-    case Scheme = "Scheme"
     case Serve = "Serve"
     case Web = "Web"
     case Mini = "Mini"

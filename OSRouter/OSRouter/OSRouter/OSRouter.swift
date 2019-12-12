@@ -19,7 +19,7 @@ extension OSRouter{
         
         let result = true
         
-        let routerParams = moduleUrl.parseOSRouterUrl(url: moduleUrl)
+        let routerParams = moduleUrl.parseOSRouterUrl(url: moduleUrl,params:params)
         
         switch result {
         case routerParams.osModuleScheme?.hasPrefix(OSModuleType.Native.rawValue) == result:

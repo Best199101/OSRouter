@@ -12,7 +12,7 @@ extension URL{
     
     
     // url解析规则,根据需求可扩展
-    internal func parseOSRouterUrl(url:URL) -> OSRouterParams {
+    internal func parseOSRouterUrl(url:URL,params:OSAnyHashbleDic?) -> OSRouterParams {
         
         let routerParams = OSRouterParams()
         
@@ -22,7 +22,7 @@ extension URL{
         routerParams.osModuleAuthor(url.user)
         routerParams.osModulePassword(url.password)
 
-        var params:OSAnyHashbleDic = [:]
+        var paramsDic:OSAnyHashbleDic = [:]
         
         if let query = url.query{
             
@@ -32,14 +32,21 @@ extension URL{
             
                 if keyVaule.count == 2,let key = keyVaule.first,let last = keyVaule.last{
                     
-                    params[key] = last
+                    paramsDic[key] = last
                     
                 }
                 
             }
+            
+            // 参数拼接
+            if let params = params{
+                
+                paramsDic += params
+                
+            }
    
         }
- 
+        routerParams.osModuleParams = paramsDic
         return routerParams
 
         
