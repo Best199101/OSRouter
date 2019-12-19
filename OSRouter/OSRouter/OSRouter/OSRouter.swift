@@ -13,13 +13,13 @@ class OSRouter: NSObject,OSRouterProtocol {}
 extension OSRouter{
     
     // Module统一调用
-    static public func performeCurrentModule(moduleUrl:URL?,params:OSAnyHashbleDic?){
+    static public func performeCurrentModule(moduleUrl:URL){
         
         guard let moduleUrl = moduleUrl else { return  }
         
         let result = true
         
-        let routerParams = moduleUrl.parseOSRouterUrl(url: moduleUrl,params:params)
+        let routerParams = moduleUrl.parseOSRouterUrl(url: moduleUrl)
         
         switch result {
         case routerParams.osModuleScheme?.hasPrefix(OSModuleType.Native.rawValue) == result:
