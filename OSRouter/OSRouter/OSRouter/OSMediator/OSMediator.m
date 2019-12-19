@@ -80,11 +80,7 @@
     }
 }
 
-- (void)removeTargetWithTargetName:(NSString *)targetName
-{
-    NSString *targetClassString = [NSString stringWithFormat:@"%@", targetName];
-    [self.cachedTarget removeObjectForKey:targetClassString];
-}
+
 
 #pragma mark - private methods
 - (void)NoTargetActionResponseWithTargetString:(NSString *)targetString selectorString:(NSString *)selectorString originParams:(NSDictionary *)originParams
@@ -113,6 +109,19 @@
                                                 Target:target
                                                 Params:params
                                              MethodSig:methodSig];
+    
+}
+
+
+- (void)removeTargetWithTargetName:(NSString *)targetName
+{
+    NSString *targetClassString = [NSString stringWithFormat:@"%@", targetName];
+    [self.cachedTarget removeObjectForKey:targetClassString];
+}
+
+- (void)removeAllTarget{
+    
+    [self.cachedTarget removeAllObjects];
     
 }
 

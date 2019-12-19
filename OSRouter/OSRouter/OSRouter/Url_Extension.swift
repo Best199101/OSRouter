@@ -9,8 +9,7 @@
 import Foundation
 
 extension URL{
-    
-    
+
     // url解析规则,根据需求可扩展
     internal func parseOSRouterUrl(url:URL) -> OSRouterParams {
         

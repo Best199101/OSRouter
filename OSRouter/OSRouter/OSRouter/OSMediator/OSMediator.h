@@ -13,8 +13,12 @@
 
 + (instancetype)sharedInstance;
 
+//业务调用统一中转
 - (id)performTarget:(OSRouterParams *)params shouldCacheTarget:(BOOL)shouldCacheTarget;
+//根据name清理指定tagrget
 - (void)removeTargetWithTargetName:(NSString *)targetName;
+//清理所有资源
+- (void)removeAllTarget;
 
 
 @end
